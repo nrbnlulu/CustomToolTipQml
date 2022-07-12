@@ -10,7 +10,7 @@ if __name__ == '__main__':
     engine = QQmlApplicationEngine()
     qmlFile = join(dirname(__file__), 'example.qml')
     engine.load(abspath(qmlFile))
-
+        
     if not engine.rootObjects():
         sys.exit(-1)
 

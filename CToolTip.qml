@@ -6,7 +6,7 @@ Item{id: root;
     property alias cursorShape: _mouseArea.cursorShape
     readonly property color black: "#18191c"
     property string text: "";
-    property real animationDuration: 400
+    property real animationDuration: 200
     anchors.fill: parent;
     MouseArea{id: _mouseArea;
         anchors.fill: parent

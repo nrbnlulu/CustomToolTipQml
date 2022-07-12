@@ -4,18 +4,18 @@ import QtQuick.Window 2.14
 Window {id: root
     visible: true
     width: 600
-    height: 500
+    height: 600
     title: "CustomToolTip example"
-    property var currentIndex;
+
     ListView{
-        anchors.centerIn: parent
+        anchors.centerIn: parent;
         height: parent.height;
+        width: childrenRect.width
         model: ListModel{
             ListElement{direction: "left"}
             ListElement{direction: "top"}
             ListElement{direction: "right"}
             ListElement{direction: "bottom"}
-
         }
         spacing: 20;
         delegate:
