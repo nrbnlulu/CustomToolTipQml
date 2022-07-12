@@ -1,4 +1,4 @@
-import QtQuick
+import QtQuick 2.15
 
 Item{id: root;
     property string tipDirection: "right"
@@ -6,6 +6,7 @@ Item{id: root;
     property alias cursorShape: _mouseArea.cursorShape
     readonly property color black: "#18191c"
     property string text: "";
+    property real animationDuration: 400
     anchors.fill: parent;
     MouseArea{id: _mouseArea;
         anchors.fill: parent
@@ -23,7 +24,7 @@ Item{id: root;
         height: _textArea.implicitHeight * 1.75
         Behavior on scale {
             NumberAnimation{
-                duration: animationDuration / 4
+                duration: animationDuration 
                 easing.type: Easing.InOutBack
             }
         }
@@ -32,7 +33,7 @@ Item{id: root;
             text: root.text;
             font.bold: true;
             font.pointSize: 10;
-            color: darkWhite;
+            color: "#E6E6FA";
             anchors.centerIn: parent;
         }
         Rectangle{id: _triangle

@@ -1,0 +1,27 @@
+[[package]]
+name = "pyside2"
+version = "5.15.2.1"
+description = "Python bindings for the Qt cross-platform application and UI framework"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <3.11"
+
+[package.dependencies]
+shiboken2 = "5.15.2.1"
+
+[[package]]
+name = "shiboken2"
+version = "5.15.2.1"
+description = "Python / C++ bindings helper module"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <3.11"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "3.5.0=<3.11"
+content-hash = "26fcd9b74be9c346d5d47b95fb3caf6c0eb5296ee73701460d9c5a1e666785cc"
+
+[metadata.files]
+pyside2 = []
+shiboken2 = []
